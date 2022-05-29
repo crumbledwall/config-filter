@@ -3,7 +3,7 @@ import { useState } from 'react'
 import CopyToClipboard from 'react-copy-to-clipboard'
 
 export default function Home() {
-  const [copyMessage, setCopyMessage] = useState('copy')
+  const [copyMessage, setCopyMessage] = useState('复制')
   const [input, setInput] = useState('')
   const [output, setOutput] = useState('')
 
@@ -32,9 +32,9 @@ export default function Home() {
   }
 
   const copy = () => {
-    setCopyMessage('copied')
+    setCopyMessage('复制成功')
     setTimeout(() => {
-      setCopyMessage('copy')
+      setCopyMessage('复制')
     }, 1000)
   }
   return (
